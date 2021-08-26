@@ -68,5 +68,29 @@ body {
   bottom: 0;
   border-radius: 8px;
 }
+.section-vo-3 .container .tab-item-content {
+  display: none;
+  background: #fff;
+  width: 100%;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 1px 20px 78px 6px rgba(0, 0, 0, 0.03);
+  height: auto;
+  transition: all 0.3s ease;
+}
+.section-vo-3 .container .tab-item-content .tab-item-header {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #272727;
+}
+.section-vo-3 .container .tab-item-content .tab-item-text {
+  font-size: 16px;
+  line-height: 2em;
+  color: #616161;
+}
+.section-vo-3 .container .items-content-active {
+  display: block;
+}
 
 /*# sourceMappingURL=main.css.map */
