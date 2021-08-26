@@ -59,5 +59,14 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.section-vo-3 .container .tabbed-items-container .tab-active::after {
+  content: "";
+  height: 5px;
+  background: #592bff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 8px;
+}
 
 /*# sourceMappingURL=main.css.map */
