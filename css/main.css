@@ -7,6 +7,16 @@ button {
   background: none;
 }
 
+.tab-item-btn {
+  position: relative;
+  width: 400px;
+  height: 70px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
 h2 {
   font-size: 35px;
   font-weight: 800;
@@ -30,12 +40,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
-  width: 80%;
-  max-width: 1300px;
-  margin: auto;
-}
-
 .section-vo-3 {
   position: absolute;
   top: 50%;
@@ -44,6 +48,16 @@ body {
 }
 .section-vo-3 h2, .section-vo-3 h3 {
   text-align: center;
+}
+.section-vo-3 .container {
+  width: 80%;
+  max-width: 1300px;
+  margin: auto;
+}
+.section-vo-3 .container .tabbed-items-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */
