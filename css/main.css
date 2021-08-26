@@ -7,6 +7,19 @@ button {
   background: none;
 }
 
+h2 {
+  font-size: 35px;
+  font-weight: 800;
+  color: #303030;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 25px;
+  color: #8a8a8a;
+  margin-bottom: 20px;
+}
+
 *, html {
   margin: 0;
   padding: 0;
@@ -21,6 +34,16 @@ body {
   width: 80%;
   max-width: 1300px;
   margin: auto;
+}
+
+.section-vo-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section-vo-3 h2, .section-vo-3 h3 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
