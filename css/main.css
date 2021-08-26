@@ -38,6 +38,7 @@ h3 {
 
 body {
   font-family: "Poppins", sans-serif;
+  background: #fafafa;
 }
 
 .section-vo-3 {
@@ -68,7 +69,7 @@ body {
   bottom: 0;
   border-radius: 8px;
 }
-.section-vo-3 .container .tab-item-content {
+.section-vo-3 .container .tab-items-content {
   display: none;
   background: #fff;
   width: 100%;
@@ -78,13 +79,13 @@ body {
   height: auto;
   transition: all 0.3s ease;
 }
-.section-vo-3 .container .tab-item-content .tab-item-header {
+.section-vo-3 .container .tab-items-content .tab-item-header {
   margin: 20px 0;
   font-size: 20px;
   font-weight: 600;
   color: #272727;
 }
-.section-vo-3 .container .tab-item-content .tab-item-text {
+.section-vo-3 .container .tab-items-content .tab-item-text {
   font-size: 16px;
   line-height: 2em;
   color: #616161;
