@@ -13,3 +13,14 @@ button
     font-size: 16px
     font-weight: 600
     margin: 0 10px
+
+    &::after
+        content: ""
+        height: 5px
+        width: 0
+        background: rgb(89, 43, 255)
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 0
+        border-radius: 8px

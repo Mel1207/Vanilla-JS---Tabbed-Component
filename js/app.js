@@ -1,22 +1,21 @@
 'use strict'
 
-const sections = document.querySelectorAll('.section')
+const tabBtn = document.querySelectorAll('.tab-item-btn');
+const tabBtnContainer = document.querySelector('.tabbed-items-container');
+const tabContent = document.querySelectorAll('.tab-items-content');
 
-const revealSection = (entries, observer) => {
-    const [entry] = entries
-    // console.log(entry)
+tabBtnContainer.addEventListener('click', e => {
+    console.log(e.target)
 
-    if(!entry.isIntersecting) return
-    entry.target.classList.add('section-reveal');
-    observer.unobserve(entry.target)
-}
+    const clicked = e.target.closest('.tab-item-btn')
+    
+    // guard clause
+    if(!clicked) return
 
-const sectionObserver = new IntersectionObserver(revealSection, {
-    root: null, 
-    threshold: 0.3
-}); 
+    // remove class on not active tab
+    tabBtn.forEach(btn => {
+        btn.classList.remove('tab-active')
+    })
 
-sections.forEach(section => {
-    sectionObserver.observe(section);
-    section.classList.remove('section-reveal');
+    clicked.classList.add('tab-active')
 })

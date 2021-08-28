@@ -16,6 +16,17 @@ button {
   font-weight: 600;
   margin: 0 10px;
 }
+.tab-item-btn::after {
+  content: "";
+  height: 5px;
+  width: 0;
+  background: #592bff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  border-radius: 8px;
+}
 
 h2 {
   font-size: 35px;
@@ -60,14 +71,12 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.section-vo-3 .container .tabbed-items-container .tab-active {
+  position: relative;
+}
 .section-vo-3 .container .tabbed-items-container .tab-active::after {
-  content: "";
-  height: 5px;
-  background: #592bff;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  border-radius: 8px;
+  width: 100%;
+  transition: 0.5s ease;
 }
 .section-vo-3 .container .tab-items-content {
   display: none;
